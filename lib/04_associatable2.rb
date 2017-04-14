@@ -8,3 +8,25 @@ module Associatable
     # ...
   end
 end
+
+# self.assoc_options[name] = BelongsToOptions.new(name, options)
+#
+#  define_method(name) do
+#    options = self.class.assoc_options[name]
+#
+#    key_val = self.send(options.foreign_key)
+#    options
+#      .model_class
+#      .where(options.primary_key => key_val)
+
+
+# self.assoc_options[name] =
+# HasManyOptions.new(name, self.name, options)
+#
+# define_method(name) do
+#   options = self.class.assoc_options[name]
+#
+#   key_val = self.send(options.primary_key)
+#   options
+#   .model_class
+#   .where(options.foreign_key => key_val)
